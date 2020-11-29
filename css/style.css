@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    align-items: center;
+    height: 40px;
+}
+
+.h1 {
+    width: 210px;
+}
+
+.h2 {
+    font-size: 24px;
+    color: #3F5D45;
+}
+
+
+.function-item {
+    display: flex;
+}
+
+.option {
+    display: flex;
+    margin-right: 80px;
+    justify-content: space-around;
+    align-items: center;
+    width: 215px;
+}
+
+.option li {
+    font-size: 16px;
+    color: #3F5D45;
+    font-weight: bold;
+}
+
+.banner {
+    margin-top: 36px;
+    margin-bottom: 60px;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.menu {
+    text-align: center;
+    margin-right: 20px;
+}
+
+.menu .h2 {
+    width: 300px;
+    height: 65px;
+    line-height: 40px;
+    padding: 16px 0 ;
+    border: 1px solid #EAF0ED;
+}
+
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+}
+
+.product li img {
+    width: 300px;
+    height: 315px;
+}
+
+.product-price {
+    display: flex;
+    justify-content: space-evenly;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+}
+
+.product-price .h2 {
+    margin: 14px 33px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.product-price span {
+    width: 127px;
+    border-left: 1px solid #EAF0ED;
+    text-align: center;
+    padding: 14px 20px 14px 25px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.addcart {
+    display: block;
+    height: 65px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #EAF0ED ;
+    font-size: 24px;
+    line-height: 20px;
+    color: #3F5D45;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 65px;
+}
+
+
+.page {
+    margin-bottom: 60px;
+}
+
+.page-option {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-option li {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+}
+
+.page-option li a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.icon-direct img {
+    margin: 18px;
+}
+
+.touched-dark {
+    background-color: #3F5D45;
+}
+
+.touched-dark a {
+    color: #EAF0ED;
+}
+
+.touched-light {
+    background-color: #EAF0ED;
+}
+
+.untouched {
+    color: #3F5D45;
+}
