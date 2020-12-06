@@ -1,162 +1,174 @@
-* {
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:before, *:after {
     box-sizing: border-box;
 }
+
+/* 以上為 reset.css 設定 */
 
 .wrap {
     width: 1024px;
     margin: 0 auto;
+    /* 設定 padding-top，其他區塊使用 margin-bbottom 統一留白方向設定*/
+    padding-top: 30px;
+    /* padding-left: 42px;
+    padding-right: 42px; */
+    font-family: "PingFangTC-Semibold";
+    font-weight: 600;
+    /* background-color: #d1cfcf; */
+}
+
+/* 區塊非滿版寬度設定 */
+.header, .banner, .content {
     padding-left: 42px;
     padding-right: 42px;
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 36px;
-    align-items: center;
+    margin-bottom: 30px;
+    /* background-color: #f7fcba; */
+}
+
+.logo img {
     height: 40px;
 }
 
-.h1 {
-    width: 210px;
-}
-
-.h2 {
-    font-size: 24px;
-    color: #3F5D45;
-}
-
-
-.function-item {
+.menu {
+    width: 319px;
     display: flex;
-}
-
-.option {
-    display: flex;
-    margin-right: 80px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 215px;
+    /* background-color: pink; */
 }
 
-.option li {
+.menu-item {
+    width: 216px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #dcf1b4; */
+    
+}
+
+.menu-item a {
     font-size: 16px;
+    text-decoration: none;
     color: #3F5D45;
-    font-weight: bold;
 }
 
-.banner {
-    margin-top: 36px;
+
+.shoppingcart {
+    display:block;
+    width: 24px;
+}
+
+.banner, .content {
     margin-bottom: 60px;
 }
-
-.content {
-    display: flex;
-    margin-bottom: 30px;
-}
-
-.menu {
-    text-align: center;
-    margin-right: 20px;
-}
-
-.menu .h2 {
-    width: 300px;
-    height: 65px;
-    line-height: 40px;
-    padding: 16px 0 ;
-    border: 1px solid #EAF0ED;
-}
-
 
 .product {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 620px;
+    /* background-color: #d2afff; */
 }
 
-.product li img {
+.product-type {
     width: 300px;
-    height: 315px;
+    /* background-color: #c0edf5; */
 }
 
-.product-price {
-    display: flex;
-    justify-content: space-evenly;
-    border-left: 1px solid #EAF0ED;
-    border-right: 1px solid #EAF0ED;
-}
 
-.product-price .h2 {
-    margin: 14px 33px;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-.product-price span {
-    width: 127px;
-    border-left: 1px solid #EAF0ED;
+.product-type-title {
     text-align: center;
-    padding: 14px 20px 14px 25px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: bold;
-}
-.addcart {
-    display: block;
-    height: 65px;
-    text-decoration: none;
-    text-align: center;
-    background-color: #EAF0ED ;
     font-size: 24px;
-    line-height: 20px;
-    color: #3F5D45;
-    font-weight: bold;
-    margin-bottom: 20px;
     line-height: 65px;
-}
-
-
-.page {
-    margin-bottom: 60px;
-}
-
-.page-option {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.page-option li {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border: 1px solid #EAF0ED;
-    text-align: center;
-}
-
-.page-option li a {
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 20px;
-}
-
-.icon-direct img {
-    margin: 18px;
-}
-
-.touched-dark {
+    color: #EAF0ED;
     background-color: #3F5D45;
 }
 
-.touched-dark a {
-    color: #EAF0ED;
+.product-type-list li {
+    text-align: center;
+    font-size: 24px;
+    /* height: 40px; */
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #EAF0ED;
 }
 
-.touched-light {
+.product-type-touched {
     background-color: #EAF0ED;
 }
 
-.untouched {
+.product-type-list a {
+    text-decoration: none;
     color: #3F5D45;
+}
+
+.product-item {
+    width: 620px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: #aaf8cb; */
+}
+
+
+.footer {
+    background-color: #3F5D45;
+    height:100px;
+    
 }

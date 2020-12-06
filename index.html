@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>課前最終作業二</title>
 </head>
+
 <body>
     <div class="wrap">
         <div class="header">
-            <h1 class="h1"><a href="#"><img src="img/logo-all-dark.svg" alt="sweetaste"></a></h1>
-            <div class="function-item"">
-                <ul class="option">
-                    <li>首頁</li>
-                    <li>甜點</li>
-                    <li>登入</li>
+            <h1 class="logo"><a href="#"><img src="img/logo-all-dark.svg" alt="logo"></a></h1>
+            <div class="menu">
+                <ul class="menu-item">
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">甜點</a></li>
+                    <li><a href="#">登入</a></li>
                 </ul>
-                <span><img src="img/shopping_cart.png" alt="shoppingcart"></span>
+                <img src="img/shopping_cart.png" alt="shoppingcart" class="shoppingcart">
             </div>
         </div>
         <img src="img/banner.png" alt="banner" class="banner">
         <div class="content">
-            <ul class="menu">
-                <li class="touched-dark"><h2 class="h2"><a>甜點類別</a></h2></li>
-                <li class="touched-light"><h2 class="h2"><a>所有甜點 (48)</a></h2></li>
-                <li><h2 class="h2"><a>本日精選 (10)</a></h2></li>
-                <li><h2 class="h2"><a>人氣推薦 (26)</a></h2></li>
-                <li><h2 class="h2"><a>新品上市 (12)</a></h2></li>
-            </ul>
-            
-            <ul class="product">
-                <li>
-                    <img src="img/p-1.png" alt="p-1">
-                    <div class="product-price">
-                        <h2 class="h2">焦糖瑪卡龍</h2>
+            <div class="product">
+                <div class="product-type">
+                    <h2 class="product-type-title">甜點類別</h2>
+                    <ul class="product-type-list">
+                        <li class="product-type-touched"><a href="#">所有甜點 (48)</a></li>
+                        <li><a href="#">本日精選 (10)</a></li>
+                        <li><a href="#">人氣推薦 (26)</a></li>
+                        <li><a href="#">新品上市 (12)</a></li>
+                    </ul>
+                </div>
+
+                <ul class="product-item">
+                    <li>
+                        <img src="img/p-1.png" alt="">
+                        <h3></h3>
                         <span>NT$ 450</span>
-                    </div>
-                    <a class="addcart" href="#">加入購物車</a>   
-                </li>
-                <li>
-                    <img src="img/p-2.png" alt="p-2">
-                    <div class="product-price">
-                        <h2 class="h2">焦糖瑪卡龍</h2>
+                        <p>加入購物車</p>
+                    </li>
+                    <li>
+                        <img src="img/p-2.png" alt="">
+                        <h3>焦糖馬卡龍</h3>
                         <span>NT$ 450</span>
-                    </div>
-                    <a class="addcart" href="#">加入購物車</a>
-                </li>
-                <li>
-                    <img src="img/p-3.png" alt="p-3">
-                    <div class="product-price">
-                        <h2 class="h2">焦糖瑪卡龍</h2>
+                        <p>加入購物車</p>
+                    </li>
+                    <li>
+                        <img src="img/p-3.png" alt="">
+                        <h3>焦糖馬卡龍</h3>
                         <span>NT$ 450</span>
-                    </div>
-                    <a class="addcart" href="#">加入購物車</a>
-                </li>
-                <li>
-                    <img src="img/p-4.png" alt="p-4">
-                    <div class="product-price">
-                        <h2 class="h2">焦糖瑪卡龍</h2>
+                        <p>加入購物車</p>
+                    </li>
+                    <li>
+                        <img src="img/p-4.png" alt="">
+                        <h3>焦糖馬卡龍</h3>
                         <span>NT$ 450</span>
-                    </div>
-                    <a class="addcart" href="#">加入購物車</a>
-                </li>
-                <li>
-                    <img src="img/p-5.png" alt="p-5">
-                    <div class="product-price">
-                        <h2 class="h2">焦糖瑪卡龍</h2>
+                        <p>加入購物車</p>
+                    </li>
+                    <li>
+                        <img src="img/p-5.png" alt="">
+                        <h3>焦糖馬卡龍</h3>
                         <span>NT$ 450</span>
-                    </div>
-                    <a class="addcart" href="#">加入購物車</a>
-                </li>
-                <li>
-                    <img src="img/p-6.png" alt="p-6">
-                    <div class="product-price">
-                        <h2 class="h2">焦糖瑪卡龍</h2>
+                        <p>加入購物車</p>
+                    </li>
+                    <li>
+                        <img src="img/p-6.png" alt="">
+                        <h3>焦糖馬卡龍</h3>
                         <span>NT$ 450</span>
-                    </div>
-                    <a class="addcart" href="#">加入購物車</a>
-                </li>
-            </ul>
-            
+                        <p>加入購物車</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="page"></div>
         </div>
-        <div class="page">
-            <ul class="page-option">
-                <li><a class="icon-direct" href="#"><img src="img/arrow_left.png" alt="previus"></a></li>
-                <li class="touched-dark"><a href="#">1</a></li>
-                <li><a class="untouched" href="#">2</a></li>
-                <li><a class="untouched" href="#">3</a></li>
-                <li><a class="icon-direct" href="#"><img src="img/arrow_right.png" alt="next"></a></li>
-            </ul>
-        </div>
+
+        <div class="footer"></div>
     </div>
-    
 </body>
+
 </html>
